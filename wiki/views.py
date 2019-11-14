@@ -27,20 +27,4 @@ class PageDetailView(DetailView):
           'page': page
         })
 
-class SignUpView(DetailView):
-    """Renders a sign up page."""
-    model = Page
 
-    def get(self, request):
-        """ Returns a sign up page. """
-        return render(request, 'registration/signup.html', {
-        })
-
-class LogInView(DetailView):
-    """ Renders a log in page."""
-    model = Page
-
-    def get(self, request):
-        """ Returns a log in page. """
-        return render(request, 'registration/login.html', {
-        })
